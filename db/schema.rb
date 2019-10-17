@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191017020253) do
+ActiveRecord::Schema.define(version: 20191017020755) do
 
   create_table "authors", force: :cascade do |t|
     t.string "name"
     t.string "genre"
+    t.text   "bio"
   end
 
   create_table "categories", force: :cascade do |t|
